@@ -17,7 +17,82 @@ const Search = () => {
             <button>Search</button>
           </SearchBar>
         </TopSearch>
-        <SearchData>Card</SearchData>
+        <SearchData>
+          {/* <EmptySearch>
+            <ImageHold>
+              <img src="/image/search.svg" alt="" />
+            </ImageHold>
+            <Message>
+              Empty Search Result, Search a Podcast in the Search Bar Above
+            </Message>
+          </EmptySearch> */}
+
+          <DataSearch>
+            <Card>
+              <CardImg>
+                <img src="/image/trr.jpg" alt="" />
+              </CardImg>
+              <CardText>
+                <CardTitle>How to save a Planet</CardTitle>
+                <Author>by Yasmine Booker</Author>
+              </CardText>
+            </Card>
+            <Card>
+              <CardImg>
+                <img src="/image/trr.jpg" alt="" />
+              </CardImg>
+              <CardText>
+                <CardTitle>How to save a Planet</CardTitle>
+                <Author>by Yasmine Booker</Author>
+              </CardText>
+            </Card>
+            <Card>
+              <CardImg>
+                <img src="/image/trr.jpg" alt="" />
+              </CardImg>
+              <CardText>
+                <CardTitle>How to save a Planet</CardTitle>
+                <Author>by Yasmine Booker</Author>
+              </CardText>
+            </Card>
+            <Card>
+              <CardImg>
+                <img src="/image/trr.jpg" alt="" />
+              </CardImg>
+              <CardText>
+                <CardTitle>How to save a Planet</CardTitle>
+                <Author>by Yasmine Booker</Author>
+              </CardText>
+            </Card>
+            <Card>
+              <CardImg>
+                <img src="/image/trr.jpg" alt="" />
+              </CardImg>
+              <CardText>
+                <CardTitle>How to save a Planet</CardTitle>
+                <Author>by Yasmine Booker</Author>
+              </CardText>
+            </Card>
+            <Card>
+              <CardImg>
+                <img src="/image/trr.jpg" alt="" />
+              </CardImg>
+              <CardText>
+                <CardTitle>How to save a Planet</CardTitle>
+                <Author>by Yasmine Booker</Author>
+              </CardText>
+            </Card>
+            <Card>
+              <CardImg>
+                <img src="/image/trr.jpg" alt="" />
+              </CardImg>
+              <CardText>
+                <CardTitle>How to save a Planet</CardTitle>
+                <Author>by Yasmine Booker</Author>
+              </CardText>
+            </Card>
+          </DataSearch>
+        </SearchData>
       </Wrapper>
     </Container>
   );
@@ -50,20 +125,29 @@ const Wrapper = styled.div`
   }
 `;
 
-const TopSearch = styled.div``;
+const TopSearch = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+`;
 const Title = styled.div`
   font-size: 20px;
   font-weight: 800;
-  margin-bottom: 20px;
+  margin: 10px 0;
 `;
 const SearchBar = styled.div`
-  width: 350px;
+  width: 450px;
   height: 40px;
   background-color: #fff;
   border-radius: 50px;
   display: flex;
   align-items: center;
   padding: 0 3px 0 10px;
+  @media (max-width: 450px) {
+    width: 95%;
+  }
 
   input {
     height: 100%;
@@ -91,3 +175,67 @@ const SearchBar = styled.div`
   }
 `;
 const SearchData = styled.div``;
+const EmptySearch = styled.div`
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 200px;
+  }
+`;
+
+const ImageHold = styled.div`
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #585858;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+`;
+
+const Message = styled.div`
+  font-size: 13px;
+  text-align: center;
+`;
+
+const DataSearch = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+`;
+
+const Card = styled.div`
+  width: 200px;
+  transition: all 350ms;
+  margin: 10px;
+`;
+
+const CardImg = styled.div`
+  height: 200px;
+  width: 200px;
+  background-color: #282828;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  margin-bottom: 10px;
+
+  img {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 7px;
+  }
+`;
+const CardText = styled.div``;
+const CardTitle = styled.div`
+  font-weight: bold;
+  font-size: 15px;
+`;
+const Author = styled.div`
+  font-size: 11px;
+  color: #a7a79b;
+`;
