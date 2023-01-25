@@ -69,6 +69,46 @@ const Categories = () => {
               <div>Music</div>
             </CategoryTitle>
           </CategoryCard>
+          <CategoryCard>
+            <Cover style={{ backgroundImage: `url("/image/zxx.jpg")` }}>
+              <CoverIcon>
+                <BiMusic />
+              </CoverIcon>
+            </Cover>
+            <CategoryTitle>
+              <div>Music</div>
+            </CategoryTitle>
+          </CategoryCard>
+          <CategoryCard>
+            <Cover style={{ backgroundImage: `url("/image/zxx.jpg")` }}>
+              <CoverIcon>
+                <BiMusic />
+              </CoverIcon>
+            </Cover>
+            <CategoryTitle>
+              <div>Music</div>
+            </CategoryTitle>
+          </CategoryCard>
+          <CategoryCard>
+            <Cover style={{ backgroundImage: `url("/image/zxx.jpg")` }}>
+              <CoverIcon>
+                <BiMusic />
+              </CoverIcon>
+            </Cover>
+            <CategoryTitle>
+              <div>Music</div>
+            </CategoryTitle>
+          </CategoryCard>
+          <CategoryCard>
+            <Cover style={{ backgroundImage: `url("/image/zxx.jpg")` }}>
+              <CoverIcon>
+                <BiMusic />
+              </CoverIcon>
+            </Cover>
+            <CategoryTitle>
+              <div>Music</div>
+            </CategoryTitle>
+          </CategoryCard>
         </CategoriesCardHold>
       </Wrapper>
     </Container>

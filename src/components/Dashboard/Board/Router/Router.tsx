@@ -5,6 +5,7 @@ import Bars from "../Bars/Bars";
 import Categories from "../Comp/Categories";
 import Favourites from "../Comp/Favourites";
 import Home from "../Comp/Home";
+import HomeDetail from "../Comp/HomeDetail";
 import Library from "../Comp/Library";
 import Search from "../Comp/Search";
 
@@ -14,6 +15,7 @@ const Router = () => {
       <Bars />
       <Routes>
         <Route path="/home" element={<Home />} />
+        <Route path="/homedetails" element={<HomeDetail />} />
         <Route path="/search" element={<Search />} />
         <Route path="/library" element={<Library />} />
         <Route path="/favourites" element={<Favourites />} />
